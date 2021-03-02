@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans JP', sans-serif; }
+
+h1 {
+  font-size: 21px;
+  margin: 0; }
+
+header nav {
+  background: #fff;
+  border-bottom: 1px solid #dadce0;
+  padding: 0 20px; }
+  header nav.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #fff; }
+
+main {
+  max-width: 1275px;
+  width: 100%;
+  margin: 60px auto; }
+  main .uk-grid-small {
+    padding-right: 15px; }
+
+section, article {
+  margin-bottom: 60px; }
+
+/*# sourceMappingURL=style.css.map */

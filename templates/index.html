@@ -1,10 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "layout.html" %}
+{% block content %}
+<main>
+    <article id="intro" class="uk-article">
+        <h2 class="uk-article-title">Introduction</h2>
+        <p class="uk-article-meta">更新日: 2021/03/05</p>
+        <!-- <p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p> -->
+        <p>
+            現在Webの制作会社でサイト制作を行っております。<br>
+            業務上でCMSなどに触れることで他のプログラミングにも挑戦したく思い独学でPythonやRuby、Javascriptのフレームワークなどを学習していました。<br>
+            その過程でデータサイエンスや機械学習でできることに興味を持ったことをきっかけに、<br>
+            2020年6月にキャリアチェンジを目標にオンラインスクールAidemyに申し込みを行い本格的に学習をはじめました。<br>
+            3か月学んだのち、業務のイメージがつくことを目標に引き続き独学を続け今に至ります。
+        </p>
+    </article>
+
+    <section id="works">
+        <h2 class="uk-article-title">Works</h2>
+        <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3>Title</h3>
+                    <p>test text test text test text</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3>Title</h3>
+                    <p>test text test text test text</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <h3>Title</h3>
+                    <p>test text test text test text</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article id="profile" class="uk-article">
+        <h2 class="uk-article-title">Profile</h2>
+        <p>
+            現在Webの制作会社でサイト制作を行っております。<br>
+            業務上でCMSなどに触れることで他のプログラミングにも挑戦したく思い独学でPythonやRuby、Javascriptのフレームワークなどを学習していました。<br>
+            その過程でデータサイエンスや機械学習でできることに興味を持ったことをきっかけに、<br>
+            2020年6月にキャリアチェンジを目標にオンラインスクールAidemyに申し込みを行い本格的に学習をはじめました。<br>
+            3か月学んだのち、業務のイメージがつくことを目標に引き続き独学を続け今に至ります。
+        </p>
+    </article>
+
+    <article id="contact" class="uk-article">
+        <h2 class="uk-article-title">Contact</h2>
+        <p>email: nishikawa.ko1@outlook.com</p>
+    </article>
+</main>
+{% endblock %}
