@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+    <main>
+        <div id="form">
+            <h3>ファイルをアップロードして判定</h3>
+            <form method = post enctype = multipart/form-data>
+                <p><input type="file" name="file">
+                    <input type="submit" value="Upload"></p>
+            </form>
+
+        </div>
+    </main>
+{% endblock %}

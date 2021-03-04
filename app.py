@@ -9,6 +9,7 @@ from PIL import Image
 
 
 classes = ["red", "blue", "yellow", "green", "purple"]
+colors = ["赤い", "青い", "黄色い", "緑の", "紫の"]
 num_classes = len(classes)
 image_size = 50
 
@@ -21,11 +22,15 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+def color_name(l, x, default=False):
+    index_num = l.index(x) if x in l else default
+    return colors[index_num]
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
 
-@app.route('/test', methods=['GET', 'POST'])
+@app.route('/color', methods=['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
         if 'file' not in request.files:
@@ -54,10 +59,12 @@ def upload_file():
             predicted = result.argmax()
             percentage = int(result[predicted] * 100)
 
-            return render_template('result.html', title='結果ページ', predicted=classes[predicted], percentage=str(
+            result_name = color_name(classes, classes[predicted])
+
+            return render_template('result.html', title='結果ページ', predicted=result_name, percentage=str(
                 percentage))
 
-    return render_template('main.html', title='投稿ページ')
+    return render_template('color.html', title='投稿ページ')
 
 
 @app.route('/uploads/<filename>')

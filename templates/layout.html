@@ -18,15 +18,15 @@
     <header>
         <nav class="uk-navbar-container" uk-navbar>
             <div class="uk-navbar-left">
-                <h1>Koichi Nishikawa</h1>
+                <h1><a href="/">Koichi Nishikawa</a></h1>
             </div>
 
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li><a href="#intro">Introduction</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#profile">Profile</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/#intro">Introduction</a></li>
+                    <li><a href="/#works">Works</a></li>
+                    <li><a href="/#profile">Profile</a></li>
+                    <li><a href="/#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,5 +35,7 @@
     {% block content %}
     {% endblock %}
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/index.js') }}"></script>
 </body>
 </html>

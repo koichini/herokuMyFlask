@@ -28,8 +28,9 @@ header {
 
 main {
   max-width: 1275px;
-  width: 100%;
+  width: calc(100% - 20px);
   margin: 60px auto;
+  padding: 0 10px;
   .uk-grid-small {
     padding-right: 15px;
   }
@@ -37,4 +38,13 @@ main {
 
 section, article {
   margin-bottom: 60px;
+}
+
+#works {
+  a {
+    transition: all 0.2s ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
