@@ -41,10 +41,24 @@ section, article {
 }
 
 #works {
+  h4 {
+    margin-bottom: 20px;
+  }
   a {
-    transition: all 0.2s ease;
+    display: block;
+    transition: all .2s ease;
     &:hover {
+      text-decoration: none;
       opacity: 0.7;
+    }
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+      width: 100%;
     }
   }
 }
