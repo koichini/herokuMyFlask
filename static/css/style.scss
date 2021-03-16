@@ -70,8 +70,9 @@ section, article {
     .uk-card-footer {
       position: absolute;
       bottom: 30px;
-      width: calc(100% - 60px);
+      width: calc(100% - 80px);
       left: 0;
+      border-top: 0;
     }
   }
 }

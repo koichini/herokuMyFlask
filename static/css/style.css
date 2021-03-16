@@ -52,7 +52,8 @@ section, article {
   #works .uk-card .uk-card-footer {
     position: absolute;
     bottom: 30px;
-    width: calc(100% - 60px);
-    left: 0; }
+    width: calc(100% - 80px);
+    left: 0;
+    border-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
