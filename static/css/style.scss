@@ -61,4 +61,17 @@ section, article {
       width: 100%;
     }
   }
+  .uk-card {
+    position: relative;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .uk-card-footer {
+      position: absolute;
+      bottom: 30px;
+      width: calc(100% - 60px);
+      left: 0;
+    }
+  }
 }

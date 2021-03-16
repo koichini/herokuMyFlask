@@ -43,5 +43,16 @@ section, article {
   flex-wrap: wrap; }
   #works .flex a {
     width: 100%; }
+#works .uk-card {
+  position: relative;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #works .uk-card .uk-card-footer {
+    position: absolute;
+    bottom: 30px;
+    width: calc(100% - 60px);
+    left: 0; }
 
 /*# sourceMappingURL=style.css.map */
